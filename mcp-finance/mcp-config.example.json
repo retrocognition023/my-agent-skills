@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mcp-finance": {
+      "command": "node",
+      "args": ["<绝对路径>/mcp-finance/src/server.js"],
+      "env": {
+        "NODE_WORKSPACE_DIR": "<绝对路径>/mcp-finance/node_modules",
+        "MCP_FINANCE_PROFILE_DIR": "<用户目录>/.mcp-finance/profile",
+        "MCP_FINANCE_DATA_DIR": "<用户目录>/.mcp-finance/data",
+        "FINANCE_BASE_URL": "https://<你的数据源域名>",
+        "FINANCE_LOGIN_URL": "https://<你的数据源登录页>"
+      }
+    }
+  }
+}

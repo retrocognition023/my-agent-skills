@@ -1,0 +1,54 @@
+{
+  "skill": "review-material-gen",
+  "version": "1.1.0",
+  "evals": [
+    {
+      "id": "trigger-1",
+      "type": "trigger",
+      "prompt": "帮我整理线性代数特征值那块的复习材料",
+      "expected": "触发。范围明确，按顺序生成六种材料：知识框架优先 Mermaid，关键词表用表格或编号列表，必背内容附使用场景，易错点具体到场景，对应表方法步骤化，学习建议说明依据。"
+    },
+    {
+      "id": "trigger-2",
+      "type": "trigger",
+      "prompt": "知识框架：数据结构，树与二叉树",
+      "expected": "触发。至少在知识框架部分给出 Mermaid 或层级结构，体现从属与关联关系，不做名词堆叠。"
+    },
+    {
+      "id": "trigger-3",
+      "type": "trigger",
+      "prompt": "复习",
+      "expected": "触发，但范围缺失，必须先询问学科和知识点范围，不得自行假设后直接产出材料。"
+    },
+    {
+      "id": "non-trigger-1",
+      "type": "non-trigger",
+      "prompt": "帮我整理一下桌面上的文件，太乱了",
+      "expected": "不触发。这是文件整理，非学习内容。"
+    },
+    {
+      "id": "non-trigger-2",
+      "type": "non-trigger",
+      "prompt": "帮我把这次会议的内容总结成一份纪要",
+      "expected": "不触发。总结会议纪要属于非学习内容。"
+    },
+    {
+      "id": "non-trigger-3",
+      "type": "non-trigger",
+      "prompt": "给我出几道概率论的题练练",
+      "expected": "不触发。这是出题需求，属于分层出题类任务。"
+    },
+    {
+      "id": "behavior-1",
+      "type": "behavior",
+      "prompt": "只要一份关键词表，概率论条件概率",
+      "expected": "只输出关键词表，不强行凑齐六种材料；关键词表须含术语、定义、一句话通俗解释、典型示例。"
+    },
+    {
+      "id": "behavior-2",
+      "type": "behavior",
+      "prompt": "帮我整理高数级数这章的复习材料（我还没学比较判别法的极限形式）",
+      "expected": "不把未学过的内容当作已学复习材料直接铺开；确有必要涉及的前置知识需单独标注说明，并在学习建议中指出。"
+    }
+  ]
+}

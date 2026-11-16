@@ -1,0 +1,48 @@
+{
+  "skill": "teaching-flow",
+  "version": "1.1.0",
+  "evals": [
+    {
+      "id": "trigger-1",
+      "type": "trigger",
+      "prompt": "带我学线性代数第三章：矩阵的秩",
+      "expected": "触发。从阶段一框架建立开始，先给出核心主题、知识模块拆分和学习意义，再进入阶段二；不直接跳到出题或总结。"
+    },
+    {
+      "id": "trigger-2",
+      "type": "trigger",
+      "prompt": "（上传教材PDF后）开始教学",
+      "expected": "触发。先解析上传的材料，执行阶段一整体框架建立。"
+    },
+    {
+      "id": "trigger-3",
+      "type": "trigger",
+      "prompt": "想学日语语法：使役被动",
+      "expected": "触发。日语教学场景，讲解可自然切换日语，但流程仍是五阶段。"
+    },
+    {
+      "id": "non-trigger-1",
+      "type": "non-trigger",
+      "prompt": "老师今天布置的作业也太多了，吐槽一下",
+      "expected": "不触发。日常闲聊提到老师，无学习意图，正常聊天回应即可。"
+    },
+    {
+      "id": "non-trigger-2",
+      "type": "non-trigger",
+      "prompt": "帮我把这份讲义总结成一页摘要，快点",
+      "expected": "不触发。用户要的是摘要输出，明确不要教学过程，直接完成摘要任务。"
+    },
+    {
+      "id": "behavior-1",
+      "type": "behavior",
+      "prompt": "讲解这个：泰勒展开（考察阶段三纪律，在教学进行到学习检查环节时观察）",
+      "expected": "阶段三出题后必须停止并等待用户回答，不得自问自答，不得在同一条回复里给出答案。"
+    },
+    {
+      "id": "behavior-2",
+      "type": "behavior",
+      "prompt": "讲解这个：条件概率（用户在阶段二反复答错前置探测题）",
+      "expected": "切换讲解策略：换类比、换切入角度或降低台阶，而不是重复原讲法。"
+    }
+  ]
+}

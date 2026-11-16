@@ -1,0 +1,18 @@
+{
+  "name": "mcp-finance-server",
+  "version": "0.1.0",
+  "description": "Personal finance MCP server for Tencent Licaitong (qian.qq.com) - Playwright automation + portfolio tracking",
+  "bin": {
+    "mcp-finance-server": "./src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "inspect": "npx @modelcontextprotocol/inspector node src/server.js",
+    "login": "node scripts/observe-page.js",
+    "test": "node scripts/test-tools.js"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "license": "MIT"
+}
