@@ -1,0 +1,17 @@
+my-agent-skills 1.0.0
+Release date: 2026-11-16
+
+Components:
+  Skills (10):
+    tiered-question-gen                    1.2.0
+    review-material-gen                    1.1.0
+    error-attribution                      1.1.0
+    teaching-flow                          1.1.0
+    pdf-formula-inject                     1.0.0
+    research-figure                        1.0.0
+    tikz-figure-code                       1.0.0
+    svg-creator                            1.0.0
+    pycharm-python-env-repair-windows      1.0.0
+    workbuddy-cross-device-migrate         1.0.0
+  MCP:
+    mcp-finance                            0.1.0
